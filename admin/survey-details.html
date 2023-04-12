@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Lab Analysis - Admin Add</title>
+    <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg p-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="color: #fff;" href="dashboard.html">
+        <img src="assets/pics/logo-desktop.png" alt="" width="40px">
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse shadow-none " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="dashboard.html">Dashboard</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Admin
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm p-0">
+              <li><a class="dropdown-item" href="admin-add.html">Add Admin</a></li>
+              <li><a class="dropdown-item" href="admins.html">All Admin</a></li>
+              <li><a class="dropdown-item" href="admin-details.html">Edit Admin</a></li>
+              <li><a class="dropdown-item" href="admin-details.html">Admin Detail</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Email Template
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm p-0">
+              <li><a class="dropdown-item" href="email-template-edit.html">Add Email Template</a></li>
+              <li><a class="dropdown-item" href="email-template-edit.html">Edit Email Template</a></li>
+              <li><a class="dropdown-item" href="email-template.html">Email Template Detail</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Requests
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm p-0">
+              <li><a class="dropdown-item" href="request.html">All Requests</a></li>
+              <li><a class="dropdown-item" href="request-details.html">Request Detail</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Survey
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm p-0">
+              <li><a class="dropdown-item" href="survey.html">Surveys</a></li>
+              <li><a class="dropdown-item" href="survey-details.html">Surveys Detail</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              User
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm p-0">
+              <li><a class="dropdown-item" href="users.html">Users</a></li>
+              <li><a class="dropdown-item" href="user-details.html">User Detail</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="d-flex profile">
+            <div class="dropdown rounded-pill" style="background-color: #fff;" >
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="assets/pics/profile.jpg" class="rounded-circle" alt="" width="40px" height="40px"> Sara
+                </button>
+                <ul class="dropdown-menu border-0 shadow-sm p-0">
+                  <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+            <div class="container border p-4 mt-5">
+                <div class="profile-detail">
+                    <h5 class="pb-2">User Detail</h5>
+                    <div class="border-top mb-4"></div>
+                    <div class="row">
+                        <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <p>Survey ID : <span>789654</span></p>
+                            <p>Survey Date : <span>12/12/12</span></p>
+                            
+                        </div>
+                        <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <p>Request ID : <span>123456</span></p>
+                            <p>Survey Status : <span>Active</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container p-4 mt-5">
+                <h5 >Questions & Answers</h5>
+                    <div class="border-top mb-4"></div>
+                    <div class="survey-q-a">
+                      <div class="q-box">
+                        <h6><span>1-</span> The lab staff was knowledgeable and professional</h6>
+                        <div class="star-rate">
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="survey-q-a mt-3">
+                      <div class="q-box">
+                        <h6><span>2-</span> The lab staff communicated clearly and effectively</h6>
+                        <div class="star-rate">
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="survey-q-a mt-3">
+                      <div class="q-box">
+                        <h6><span>3-</span> The lab services were reasonable priced</h6>
+                        <div class="star-rate">
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="survey-q-a mt-3">
+                      <div class="q-box">
+                        <h6><span>4-</span> The lab services were completed in a timely manner</h6>
+                        <div class="star-rate">
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="survey-q-a mt-3">
+                      <div class="q-box">
+                        <h6><span>5-</span> Other Message</h6>
+                        
+                      </div>
+                      <div class="a-box mt-3">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum quia laboriosam quasi voluptatem reprehenderit ad consequatur quam itaque quod blanditiis aperiam totam earum ut consectetur, quis eveniet? Dolor, non enim.
+                        </p>
+                      </div>
+                    </div>
+            </div>
+    
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

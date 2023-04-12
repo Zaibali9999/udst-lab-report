@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Lab Analysis - Admin Add</title>
+    <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg p-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="color: #fff;" href="dashboard.html">
+        <img src="assets/pics/logo-desktop.png" alt="" width="40px">
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse shadow-none " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="dashboard.html">Dashboard</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Admin
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm p-0">
+              <li><a class="dropdown-item" href="admin-add.html">Add Admin</a></li>
+              <li><a class="dropdown-item" href="admins.html">All Admin</a></li>
+              <li><a class="dropdown-item" href="admin-details.html">Edit Admin</a></li>
+              <li><a class="dropdown-item" href="admin-details.html">Admin Detail</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Email Template
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm p-0">
+              <li><a class="dropdown-item" href="email-template-edit.html">Add Email Template</a></li>
+              <li><a class="dropdown-item" href="email-template-edit.html">Edit Email Template</a></li>
+              <li><a class="dropdown-item" href="email-template.html">Email Template Detail</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Requests
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm p-0">
+              <li><a class="dropdown-item" href="request.html">All Requests</a></li>
+              <li><a class="dropdown-item" href="request-details.html">Request Detail</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Survey
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm p-0">
+              <li><a class="dropdown-item" href="survey.html">Surveys</a></li>
+              <li><a class="dropdown-item" href="survey-details.html">Surveys Detail</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              User
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm p-0">
+              <li><a class="dropdown-item" href="users.html">Users</a></li>
+              <li><a class="dropdown-item" href="user-details.html">User Detail</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="d-flex profile">
+            <div class="dropdown rounded-pill" style="background-color: #fff;" >
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="assets/pics/profile.jpg" class="rounded-circle" alt="" width="40px" height="40px"> Sara
+                </button>
+                <ul class="dropdown-menu border-0 shadow-sm p-0">
+                  <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+            <div class="container border p-4  mt-5">
+                <div class="profile-detail">
+                    <h4 class="pb-2">Request Detail</h4>
+                    <div class="border-top mb-4"></div>
+                    <div class="row">
+                        <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <p>Request ID : <span>Sara Khan</span></p>
+                            <p>Request Type : <span>xxxxx</span></p>
+                            <p>Request Status : <span>xxxxx</span></p>
+                            <p>Assigned To (Names) : <span>xxxxx</span></p>
+                            <p>Sent for Approval : <span>(Yes / No)</span></p>
+                            
+                        </div>
+                        <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <p>Request Date : <span>xxxxx</span></p>
+                            <p>Email Send (Date) : <span>03123456789</span></p>
+                            <p>Report Uploaded (Date) : <span>03123456789</span></p>                            
+                            <p>Report Approved by Head : <span>(Yes / No)</span></p>
+                            <p>Report forwarded to client (Date) : <span>03123456789</span></p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="container border p-4">
+                <button type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#request">
+                    Approve / Reject Request
+                </button>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#uploadreport">
+                    Upload Report
+                </button>
+                <button type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#sendemail">
+                    Send Email to client
+                </button>
+            </div>
+
+
+            <!-- =================request report================= -->
+            <!-- Modal -->
+  <div class="modal fade" id="request" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Approved or Reject Request</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-sm-12 col-lg-12 col-xl-12 col-md-12 mb-3">
+                    <label for="Password" class="form-label">Approve or Reject Request</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Select</option>
+                        <option value="Pending">Pending</option>
+                        <option value="Approve">Approve</option>
+                        <option value="Reject">Reject</option>
+                        <option value="Request for Report Approval">Request for Report Approval</option>
+                        <option value="Approved">Approved</option>
+                        <option value="Reject">Reject</option>
+                      </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Comment</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Comment"></textarea>
+                  </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-primary" data-bs-dismiss="modal">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+            <!-- =================request report================= -->
+            <!-- =================upload report================= -->
+            <!-- Modal -->
+  <div class="modal fade" id="uploadreport" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Upload Report</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-12 col-lg-12 col-xl-12 col-md-12 mb-3">                     
+                <div class="mb-3">
+                    <label for="Report Title" class="form-label">Report Title</label>
+                    <input type="text" class="form-control" id="Report Title" placeholder="Report Title">
+                  </div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Report Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+              </div>
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupFile01">Report File</label>
+                <input type="file" class="form-control" id="inputGroupFile01">
+              </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-primary" data-bs-dismiss="modal">Upload Report</button>
+        </div>
+      </div>
+    </div>
+  </div>
+            <!-- =================upload report================= -->
+            <!-- =================sendemail report================= -->
+            <!-- Modal -->
+  <div class="modal fade" id="sendemail" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Send Email to Client</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-sm-12 col-lg-12 col-xl-12 col-md-12 mb-3">
+                    <label for="Password" class="form-label">Templates</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Select</option>
+                        <option value="1">xxxxxx</option>
+                        <option value="2">xxxxxx</option>
+                      </select>
+                </div>
+                <div class="col-sm-12 col-lg-12 col-xl-12 col-md-12 mb-3">
+                                                
+                    <div class="mb-3">
+                        <label for="Subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="Subject" placeholder="Subject">
+                      </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Write Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                  </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-primary" data-bs-dismiss="modal">Send Email</button>
+        </div>
+      </div>
+    </div>
+  </div>
+            <!-- =================sendemail report================= -->
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
